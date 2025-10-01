@@ -75,27 +75,27 @@ Docker Hub:
 
 Images:
 -------
-docker build -t <name> .: Build an image from a Dockerfile.
-docker images: List local images.
-docker image prune: Remove unused images
-docker rmi <image>: Remove an image.
-docker tag <source> <target>: Creates a new tag for a local image (useful before pushing).
-docker push <image>: Uploads a local image to a registry (Docker Hub).
-docker image prune:	Removes all dangling (untagged and unreferenced) images.
+1. docker build -t <name> .: Build an image from a Dockerfile.
+2. docker images: List local images.
+3. docker image prune: Remove unused images
+4. docker rmi <image>: Remove an image.
+5. docker tag <source> <target>: Creates a new tag for a local image (useful before pushing).
+6. docker push <image>: Uploads a local image to a registry (Docker Hub).
+7. docker image prune:	Removes all dangling (untagged and unreferenced) images.
 
 Containers:
 -----------
 
-docker run <image> <command>: Create and start a container. (-it for interactive, -d for detached, -p for port mapping, --name to name it).
-docker ps / docker ps -a: List running / all containers.
-docker logs -f <container_name>: Fetch & follow logs of a container
-docker inspect <container>: inspect a running container
-docker start <container>: Starts one or more stopped containers.
-docker restart <container>: Stops and then starts a container.
-docker stop <container>: Stop a running container.
-docker rm <container>: Remove a container.
-docker container stats: view resource usage stats of running container
-docker exec -it <container> <cmd>: Executes a command (like /bin/bash) inside a running container.
-docker system prune: Removes all unused containers, networks, dangling images, and build cache.
-docker container prune:	Removes all stopped containers.
+1. docker run <image> <command>: Create and start a container. (-it for interactive, -d for detached, -p for port mapping, --name to name it).
+2. docker ps / docker ps -a: List running / all containers.
+3. docker logs -f <container_name>: Fetch & follow logs of a container
+4. docker inspect <container>: inspect a running container
+5. docker start <container>: Starts one or more stopped containers.
+6. docker restart <container>: Stops and then starts a container.
+7. docker stop <container>: Stop a running container.
+8. docker rm <container>: Remove a container.
+9. docker container stats: view resource usage stats of running container
+10. docker exec -it <container> <cmd>: Executes a command (like /bin/bash) inside a running container.
+11. docker system prune: Removes all unused containers, networks, dangling images, and build cache.
+12. docker container prune:	Removes all stopped containers.
 
