@@ -94,9 +94,8 @@ docker start <container>: Starts one or more stopped containers.
 docker restart <container>: Stops and then starts a container.
 docker stop <container>: Stop a running container.
 docker rm <container>: Remove a container.
-docker container stats: view resource usage stats of running containers
+docker container stats: view resource usage stats of running container
 docker exec -it <container> <cmd>: Executes a command (like /bin/bash) inside a running container.
 docker system prune: Removes all unused containers, networks, dangling images, and build cache.
 docker container prune:	Removes all stopped containers.
-
 
