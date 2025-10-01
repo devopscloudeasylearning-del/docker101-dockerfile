@@ -1,8 +1,10 @@
-Docker Demo Repository 🐳
+DockerFile Demo 🐳
+------------------
+
 This repository contains three demonstration Dockerfiles illustrating different ways to use ENTRYPOINT and CMD.
 
 
-1. Dockerfile 
+1. **Dockerfile** 
 This Dockerfile defines common instructions to build an image. 
 
 a. Build the Image
@@ -17,7 +19,7 @@ Container is running...
 Demo complete.
 Container Exiting.
 
-2. Dockerfile_cmd 
+2. **Dockerfile_cmd **
 This Dockerfile contains only FROM, WORKDIR & CMD instructions
 
 a. Build the Image
@@ -28,8 +30,6 @@ docker run -it cmddemo:v1
 
 Output:
 starts the bash screen (interactive shell)
-# pwd
-# /app
 
 c. Override CMD instruction
 docker run -it cmddemo:v1 echo 'Hello World.'
@@ -38,7 +38,7 @@ Output:
 Hello World.
 
 
-3. Dockerfile_entrypoint
+3. **Dockerfile_entrypoint**
 This Dockerfile contains only FROM & ENTRYPOINT instructions
 
 a. Build the Image
@@ -61,5 +61,4 @@ docker run -it --entrypoint="/bin/sh" entrypointdemo:v1
 
 Output:
 starts the bash screen (interactive shell)
-# pwd
-# /
+
