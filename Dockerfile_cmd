@@ -1,0 +1,4 @@
+FROM ubuntu 
+WORKDIR /app
+# The default command is to run a shell.
+CMD ["/bin/bash"]

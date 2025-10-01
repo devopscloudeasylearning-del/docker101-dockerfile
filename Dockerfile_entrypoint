@@ -1,0 +1,3 @@
+FROM alpine
+# The ENTRYPOINT is the ping utility itself.
+ENTRYPOINT ["ping"]
